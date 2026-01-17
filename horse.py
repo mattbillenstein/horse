@@ -18,6 +18,7 @@ class Puzzle:
         self.horse = None
         self.portals = {}
         self.cherries = set()
+        self.boxes = self.puzzle['budget']
 
         rows = self.puzzle['map'].replace('~', '#').split('\n')
         self.ys = ys = range(len(rows))
